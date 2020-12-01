@@ -1,44 +1,164 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<meta charset="utf-8">
-    <title>Raport</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-	
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Luxury</title>
+	<link rel="shortcut icon" href="images/favicon.png" type="image/png">
 	<link rel="stylesheet" type="text/css" media="screen" href="css/style.css">
-
-
-
 </head>
 
 <body>
 
-<header id="site-header">
-<div class="full-menu">
+<header>
+	<div class="container">
+	<div class="line">
+		<div class="header-logo">
+				<a class="logo" title="Luxury" href="index.html"><span>Luxury</span></a>
+		</div> 
 
-<div id="logo">
-<div id="logo-wrapper">
-<p class="site-title"><a href="#" rel="home">Luxury</a></p>
-</div>
-</div> 
-
-<div id="main-menu">
-<nav>
-<ul class="menu large-nav">
-  <li class="menu-item"><a href="index.html">Home</a></li>
-  <li class="menu-item"><a href="#news">News</a></li>
-  <li class="menu-item"><a href="#contact">Contact</a></li>
- <!-- <li id="li-style"><a class="active" href="#about">TEST</a></li>  -->
-</ul>
-</nav>
-</div>
-</div>
+		<div class="main-menu">
+			<nav>
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="#news">News</a></li>
+					<li><a href="#contact">Contact</a></li>
+					<!-- <li id="li-style"><a class="active" href="#about">TEST</a></li>  -->
+				</ul>
+			</nav>
+		</div>
+		<div>
+		<a class="btn" title="Book Now" href="#">Book Now</a>
+		</div>
+	</div>
+	</div>
 </header>
 
-<div class="cover-image">
-  <img src="https://www.w3schools.com/howto/img_snow_wide.jpg" alt="Snow" style="width:100%;">
-  <div class="centered">Welcome</div>
+<div>
+  <img src="images/saranda_panorame.jpg" alt="Snow" style="width:100%;">
+  <div class="centered" style="border: 1px solid black; padding:0px 20px">Luxury Hotel</div>
 </div>
+
+<!-- RESERVATION -->
+
+<div class="booking-area">
+	<div class="container">
+		
+		<form>
+		<div class="in-form">
+			<div class="mb-20">
+				<label for="checkIn">Check In:</label>
+                <input type="date" name="checkIn" id="checkIn" required>
+			</div>
+			<div class="mb-20">
+				<label for="checkOut">Check Out:</label>
+                <input type="date" name="checkOut" id="checkOut" required>
+			</div>
+			<div class="mb-20">
+				<label for="nrAdults">Adults:</label>
+				<select name="nrAdults" id="nrAdults">
+					<option value="1">1</option>
+					<option value="2">2</option>
+					<option value="3">3</option>
+					<option value="4">4</option>
+				</select>
+			</div>
+			<div class="mb-20">
+				<label for="nrChildren">Children:</label>
+				<select name="nrChildren" id="nrChildren">
+					<option value="1">1</option>
+					<option value="2">2</option>
+					<option value="3">3</option>
+					<option value="4">4</option>
+				</select>
+			</div>
+			<div class="mb-20">
+				<label for="nrRooms">Rooms:</label>
+				<select name="nrRooms" id="nrRooms">
+					<option value="1">1</option>
+					<option value="2">2</option>
+					<option value="3">3</option>
+					<option value="4">4</option>
+				</select>				
+			</div>
+			<div style="margin-top:40px;">
+				<input type="submit" value="Book Now">
+			</div>
+		<div>
+		</form>
+		
+	</div>
+</div>
+
+
+<!-- Our Experience -->
+<section>
+
+</section>
+
+
+<!-- Our Rooms -->
+<section>
+	<div class="container">
+		<div class="row">
+		
+			<div class="room-col">
+				<div class="image">
+					<a href="Room.html"><img src="images/twin-room.jpg" alt=""></a>
+					<div class="room-desc">
+						<h3><a href="Room.html">Twin Room</a></h3>
+					</div>
+				</div>
+			</div>
+
+			<div class="room-col">
+				<div class="image">
+					<a href="Room.html"><img src="images/twin-room.jpg" alt=""></a>
+					<div class="room-desc">
+						<h3><a href="Room.html">Twin Room</a></h3>
+					</div>
+				</div>
+			</div>
+
+			<div class="room-col">
+				<div class="image">
+					<a href="Room.html"><img src="images/twin-room.jpg" alt=""></a>
+					<div class="room-desc">
+						<h3><a href="Room.html">Twin Room</a></h3>
+					</div>
+				</div>
+			</div>
+
+			<div class="room-col">
+				<div class="image">
+					<a href="Room.html"><img src="images/twin-room.jpg" alt=""></a>
+					<div class="room-desc">
+						<h3><a href="Room.html">Twin Room</a></h3>
+					</div>
+				</div>
+			</div>
+
+			<div class="room-col">
+				<div class="image">
+					<a href="Room.html"><img src="images/twin-room.jpg" alt=""></a>
+					<div class="room-desc">
+						<h3><a href="Room.html">Twin Room</a></h3>
+					</div>
+				</div>
+			</div>
+
+			<div class="room-col">
+				<div class="image">
+					<a href="Room.html"><img src="images/twin-room.jpg" alt=""></a>
+					<div class="room-desc">
+						<h3><a href="Room.html">Twin Room</a></h3>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
 
 <!-- Kolona -->
 <div id="div-padding">
@@ -60,36 +180,10 @@
 </div>
 </div>
 
-<!-- Ndarja e dhomave -->
-<div class="container">
-<div class="row">
-
-<div class="image">
-<a href="Room.html"><img src="images/twin-room.jpg" alt=""></a>
-<div class="room-desc">
-    <h3><a href="Room.html">Twin Room</a></h3>
-</div>
-</div>
-
-<div class="image">
-<a href="Room.html"><img src="images/twin-room.jpg" alt=""></a>
-<div class="room-desc">
-    <h3><a href="Room.html">Twin Room</a></h3>
-</div>
-</div>
-
-<div class="image">
-<a href="Room.html"><img src="images/twin-room.jpg" alt=""></a>
-<div class="room-desc">
-    <h3><a href="Room.html">Twin Room</a></h3>
-</div>
-</div>
-</div>
-</div>
 <br/>
 <br/>
 
-</body>
+
 
 <footer>
       
@@ -118,5 +212,6 @@
        </div>
       
    </footer>
-
+<script src="./assets/js/gijgo.min.js"></script>
+</body>
 </html>
