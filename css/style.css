@@ -39,7 +39,7 @@ a.btn:hover { background-color: rgba(0,0,0,.3);}
 
 header { height: 100px;  position: relative;}
 
-.header-logo { border: 1px solid black;}
+.header-logo { border: 1px solid #dca73a;}
 		 
 header a.logo { 
 				z-index: 1;
@@ -83,7 +83,7 @@ nav ul li a {
 	color: black;
 	padding: 10px 20px;
 	text-decoration: none;
-	width: 125px;
+	width: 120px;
 	position: relative;
 }
 .logo {position: absolute;}
@@ -97,21 +97,20 @@ nav ul ul { position: absolute; top: 100%; background-color: #2b0306; display: n
 nav ul ul li { position: relative; }
 
 
-nav > ul { padding-left:500px;}
+nav > ul { padding-left:660px;}
 nav > ul > li {float: left;}
 nav > ul > li > a { width: auto; padding: 10px 20px 15px 20px;} 
 
 
 /* Slider */
 
-div div.centered { position: absolute; top:50%; left: 50%; 
-  transform: translate(-50%, -50%); font-size: 50px; font-weight: 700; color: white;}
-  
- 
+div.slider {height:648px; max-width: 100%; background: url(../images/saranda_panorame.jpg) no-repeat center bottom; background-size: cover;}
+div div.hero { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); text-align: center; border: 1px #dca73a solid;}
+div div.hero h1 { line-height: 1em; margin: 10px; color: black;}
   
 /* All Sections */
-section div div.row {padding: 0 30px; display: flex; flex-wrap: wrap;}
-section div div.row::after {content:''; display:block; clear:both;}
+.row {padding: 0 30px; display: flex; flex-wrap: wrap;}
+.row::after {content:''; display:block; clear:both;}
 section { margin-top: 80px; margin-bottom: 30px;}
 
 
@@ -164,6 +163,13 @@ label {
 }
 
 /* Room Section */
+
+section div div h3 {
+	color: #112e41;
+    font-size: 50px;
+    font-weight: 700;
+}
+
 .room-col {
 	width: 33%;
 	float: left;
@@ -176,10 +182,31 @@ label {
 .image {
 	box-shadow: 0px 8px 79px 0px rgba(0, 0, 0, 0.08);
 	margin-bottom: 50px;
+	border-radius: 10px;
 }
 
 .room-desc {
 	padding: 33px 20px 33px 30px;
+	
+}
+
+.room-col .image img {
+	width:100%;
+	border-radius: 5px;
+}
+
+.room-col .image a {
+	color: #112e41;
+	text-decoration: none;
+}
+.room-col .image a:hover {
+	color: #007eff;
+	transition: .5s;
+}
+
+.room-col .image h3 {
+    font-size: 20px;
+    font-weight: 600;
 }
 
 
@@ -188,15 +215,16 @@ label {
 
 
 
+@media screen and (max-width: 1200px) {
+	nav > ul { padding-left:500px;}
+}
 
 
-
-
-
-
-
-
-
+@media screen and (max-width: 1000px) {
+	.room-col {
+		width:50%;
+	}
+}
 
 
 
